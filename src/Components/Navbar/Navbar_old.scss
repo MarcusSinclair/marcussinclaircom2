@@ -1,0 +1,64 @@
+$breakpoint-small: 767px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px;
+
+$nav-height: 66px;
+
+@mixin title-font() {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(0,0,0);
+  text-decoration: none solid rgb(0,0,0);
+  letter-spacing: 0.35px;
+}
+
+nav {
+  font-size: 14px;
+  display: block;
+  max-height: $nav-height;
+  background-color: white;
+  position: sticky; top: 0;
+  border-bottom: solid 1px grey;
+
+
+
+  
+  .leftNav{
+    display: flex;
+//    width: 40%;
+    align-items: center;
+    .leftNavBurger {
+      margin-left: 20px;;
+    }
+    .leftNavLinks {
+      background-color: #e7131a;
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: $nav-height;
+  
+      li {
+        display:block;
+      }
+  }
+
+  }
+  .mid {
+    display: flex;
+    align-self: center;
+    a {
+      @include title-font();
+    }
+  }
+  
+  .right{
+    display: flex;
+    justify-content: flex-end;
+//    width: 40%;
+    align-items: center;
+  }
+  
+}
+

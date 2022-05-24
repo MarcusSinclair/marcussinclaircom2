@@ -1,0 +1,63 @@
+article {
+  margin: auto;
+  margin-top: 50px;
+  width: 665px;
+
+  header {
+
+    .ArticleRubric {
+      display: flex;
+      margin-bottom: 28px;
+      color: #e7131a;
+      font-size: 13px;
+      .Rubic {
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+      }
+      .Rubic::after{
+        content: "\2022";
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .ReadingTime {
+        color: inherit;
+        font-size: inherit;
+      }
+    }
+    .ArticleTitle {
+      margin-bottom: 18px;
+    }
+    .ArticleSubtitle{
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+    .ArticleAuthor{
+      font-size: 24px;
+      margin-bottom: 56px;
+    }
+    .ArticleDateShare {
+      display: flex;
+      justify-content: space-between;
+      p{
+        font-size: 13px;
+        
+      }
+      margin-bottom: 40px;
+      
+    }
+    border-bottom: 0.25px solid rgba(0,0,0,0.15);
+    margin-bottom: 50px;
+  }
+
+  .ArticleBody {
+    .ArticleText{
+      margin-bottom: 30px;
+    }
+    blockquote {
+      padding-left: 30px;
+      border-left: 1px solid #d3dce6;
+    }
+  }
+  }
+

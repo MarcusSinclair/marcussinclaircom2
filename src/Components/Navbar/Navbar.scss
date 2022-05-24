@@ -1,0 +1,11 @@
+$nav-height: 72px;
+
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  max-height: $nav-height;
+  background-color: white;
+  position: sticky; top: 0;
+  border-bottom: solid 1px grey;
+}

@@ -1,0 +1,34 @@
+@mixin link-font() {
+  font-family: Roboto, arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  color: rgb(0,0,0);
+  text-decoration: none solid rgb(0,0,0);
+  letter-spacing: 0.35px;
+}
+
+.LinkGroup{
+  z-index: 100;
+  .container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+  }
+  li {
+    display: inline;
+    margin: 10px;
+  }
+  a {
+    text-decoration: none;
+    @include link-font();
+  }
+}
