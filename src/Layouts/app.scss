@@ -7,10 +7,11 @@
 @import "./_base.scss";
 
 
-@import "../Components/Navbar/Navbar.scss";
-@import "../Components/Navbar/Head/Head.scss";
-@import "../Components/Navbar/Head/Hamburger/Hamburger.scss";
+@import "../Components/Navbar/Navbar";
+@import "../Components/Navbar/Head/Head";
+@import "../Components/Navbar/Head/Hamburger/Hamburger";
 @import "../Components/Navbar/Head/Title/Title.scss";
 @import "../Components/Navbar/Head/Subscribe/_Subscribe.scss";
 
+@import "../Components/Navbar/Dropdown/_Dropdown";
 @import "../Components/Navbar/Dropdown/LinkGroup/LinkGroup.scss";
